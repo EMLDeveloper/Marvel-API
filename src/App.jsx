@@ -76,7 +76,10 @@ function App() {
       <main>
         {error && <p className="error">Error: {error}</p>}
         {isLoading ? (
-          <p>Cargando personajes...</p>
+          <div className="spinner-container">
+            <div className="spinner"></div>
+            <p className="characters">Loading Characters...</p>
+          </div>
         ) : (
           <>
             <div className="filters-container">

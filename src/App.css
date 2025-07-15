@@ -81,24 +81,6 @@ body {
   gap: 0.5rem;
 }
 
-input[type="text"],
-select {
-  flex: 1;
-  padding: 0.5rem;
-  font-size: 1rem;
-  border: 1px solid #7a2a2a;
-  border-radius: 4px;
-}
-
-.summary-stats {
-  margin-top: 100px; /* or enough to clear header */
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 1.5rem;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
 .stat {
   background-color: #eeeeee42;
   padding: 0.75rem 1rem;
@@ -225,24 +207,25 @@ select:disabled {
 
 .controls-bar {
   position: fixed;
-  top: 50px; /* below your header */
+  top: 50px;
   left: 0;
   width: 100%;
   z-index: 999;
   background-image: url(https://lumiere-a.akamaihd.net/v1/images/au_portrait_grid_marvel_logo_2025_mobile_1ad65200.png?region=0%2C0%2C1024%2C640);
   background-repeat: no-repeat;
-  background-size: cover; /* replace with your image */
+  background-size: cover;
   padding: 1rem 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
 
 .summary-stats {
+  margin-top: 100px;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 1rem;
-  font-size: 2rem;
+  margin-bottom: 1.5rem;
   font-weight: bold;
+  font-size: 1.6rem;
 }
 
 .controls-inputs {
@@ -277,21 +260,6 @@ select:disabled {
   gap: 0.75rem; /* Just enough space */
   margin-left: 50px;
   margin-top: 1rem;
-}
-
-.filter-button {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  background-color: #f5f5f5;
-  border: none;
-  padding: 0.6rem 1rem;
-  border-radius: 10px;
-  font-weight: 600;
-  font-size: 1rem;
-  cursor: default;
-  color: #333;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .filter-button i {
@@ -373,6 +341,39 @@ select:disabled {
 }
 
 .found {
+  color: #4caf50;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.spinner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.spinner {
+  border: 6px solid #f3f3f3; /* Light grey */
+  border-top: 6px solid #e62429; /* Marvel red */
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.characters {
   color: #4caf50;
   font-weight: bold;
   font-size: 1.5rem;
