@@ -45,6 +45,18 @@ Here's a walkthrough of implemented user stories:
 **Demo- 3**
 <img src='https://github.com/user-attachments/assets/230e5d19-ef11-41b1-8187-d00e314e55db' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+## Screenshots Walkthrough
+
+<img width="1728" height="1117" alt="Image" src="https://github.com/user-attachments/assets/cfdf9757-fc44-46d7-b01e-de6dbaa99ce0" />
+
+<img width="1728" height="1117" alt="Image" src="https://github.com/user-attachments/assets/733285f6-fcb5-427f-89f4-7845f6f45b00" />
+
+<img width="1728" height="1117" alt="Image" src="https://github.com/user-attachments/assets/8050f72f-bdac-4fbc-be6e-14e9fec11058" />
+
+<img width="1728" height="1117" alt="Image" src="https://github.com/user-attachments/assets/73187f11-01b2-45d7-a958-b8adb40c9e9c" />
+
+<img width="1728" height="1117" alt="Image" src="https://github.com/user-attachments/assets/84643dcb-3c10-4f3f-a5bc-e95fae5283e8" />
+
 <!-- Replace this with whatever GIF tool you used! -->
 
 GIF created with GIPHY ...
