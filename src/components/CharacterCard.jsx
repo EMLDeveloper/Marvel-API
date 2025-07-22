@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function CharacterTable({ characters }) {
+function CharacterCard({ characters }) {
   if (characters.length === 0) {
     return <p className="found">No characters found.</p>;
   }
@@ -11,6 +12,7 @@ function CharacterTable({ characters }) {
         <table className="dashboard-table">
           <thead>
             <tr>
+              <th>Details</th>
               <th>Image</th>
               <th>Name</th>
               <th>Description</th>
@@ -23,6 +25,11 @@ function CharacterTable({ characters }) {
               const imageUrl = `${char.thumbnail.path}/standard_xlarge.${char.thumbnail.extension}`;
               return (
                 <tr key={char.id}>
+                  <td>
+                    <Link to={`/character/${char.id}`}>
+                      <button className="view-btn">View Details</button>
+                    </Link>
+                  </td>
                   <td>
                     <img src={imageUrl} alt={char.name} className="table-img" />
                   </td>
@@ -52,4 +59,4 @@ function CharacterTable({ characters }) {
   );
 }
 
-export default CharacterTable;
+export default CharacterCard;

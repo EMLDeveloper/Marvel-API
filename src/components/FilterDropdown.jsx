@@ -4,7 +4,7 @@ function FilterDropdown({ allSeries, selectedSeries, setSelectedSeries }) {
     <div className="filter-dropdown">
       <label className="filter-button">
         <i className="fas fa-sliders-h"></i>
-        <span>Filter</span>
+        <span>Filter Info</span>
         <select
           className="native-select"
           value={selectedSeries}
